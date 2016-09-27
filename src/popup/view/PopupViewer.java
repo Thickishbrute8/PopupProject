@@ -2,12 +2,17 @@ package popup.view;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Popup Viewer class
+ * @author Britton Perry
+ * September 27, 2016 
+ */
 public class PopupViewer
 {
 
 	/**
-	 * Makea popup window to display the supplies mesage
-	 * @param message The messagebe placed in the popup
+	 * Make a popup window to display the supplies message
+	 * @param message The message placed in the popup
 	 */
 	public void displayMessage(String message)
 	{
@@ -33,7 +38,7 @@ public class PopupViewer
 	 * @param question The question being asked the user.
 	 * @return The constant value from JOptionPane for y/n/c.
 	 */
-	public in collectUseroption(String question)
+	public int collectUserOption(String question)
 	{
 		
 		int response = 0;
