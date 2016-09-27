@@ -19,12 +19,27 @@ public class PopupViewer
 	 * @param question the question being asked to the user.
 	 * @return The users response.
 	 */
-	public String collectResponce(String question)
+	public String collectResponse(String question)
 	{
-		String responce = "";
+		String response = "";
 		
-		responce = JOptionPane.showInputDialog(null, question);
+		response = JOptionPane.showInputDialog(null, question);
 		
-		return responce;
+		return response;
+	}
+	
+	/**
+	 * creates a popup to ask a yes/no/cancel type question.
+	 * @param question The question being asked the user.
+	 * @return The constant value from JOptionPane for y/n/c.
+	 */
+	public in collectUseroption(String question)
+	{
+		
+		int response = 0;
+		
+		response = JOptionPane.showConfirmDialog(null, question);
+		
+		return response;
 	}
 }
